@@ -1,0 +1,76 @@
+@import url('reset.css');
+
+body{
+  background-color: #f6f6f6;
+  font-family: Candara, Arial, sans-serif;
+  padding-top: 50px;
+}
+
+/* ------------- 主選單 ------------- */
+ul{
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  display: flex;
+}
+ul li{
+  flex-basis: 160px;
+  flex-grow: 1;
+  position: relative;
+}
+ul li a{
+  display: block;
+  background-color: #e5e5e5;
+  line-height: 3;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+/* ------------- 子選單 ------------- */
+ol{
+  width: 160px;
+  outline: 1px solid #ccc;
+  position: absolute;
+  display: none;
+}
+ol li{}
+ol li a{
+  background-color: #fff;
+  text-decoration: none;
+}
+
+/* ------------- hover & show ------------- */
+
+ul li a:hover{
+  color: #fff;
+  background-color: #000;
+}
+
+ul li:hover > ol{
+  display:block;
+}
+
+ol li a:hover{
+  background-color: gray;
+}
+
+/* content */
+.content{
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.content img{
+  display: block;
+}
+
+
+
